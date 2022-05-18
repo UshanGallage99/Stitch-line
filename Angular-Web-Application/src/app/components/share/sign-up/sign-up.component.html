@@ -1,0 +1,22 @@
+<div class="signin-page">
+  <div class="form"> 
+    <form class="signin-form"> 
+      <div class="radio">
+        <input id="radio-1" name="radio" type="radio" (click)="enableuser()" checked>
+        <label for="radio-1" class="radio-label" id="radio">User</label>
+        &nbsp; 
+        <input id="radio-2" name="radio" type="radio" (click)="enableadmin()">
+        <label  for="radio-2" class="radio-label"id="radio">Admin</label>
+      </div>  
+      <input type="text" placeholder="name"/>
+      <input type="text" placeholder="email"/>
+      <input type="text" placeholder="mobile number"/>
+      <input type="text" placeholder="nic" [disabled]="isDisablednic"/>
+      <input type="text" placeholder="employee number" [disabled]="isDisablednic"/>
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>  
+      <button>Sign Up</button>
+      <p class="message">Already registered? <a routerLink="/login">Sign In</a></p>
+    </form>
+  </div>
+</div>
