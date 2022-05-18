@@ -9,15 +9,18 @@ import {HttpClient} from "@angular/common/http";
 export class SignUpComponent implements OnInit { 
   
   isDisablednic:boolean = true;
+  isDisabledaddress:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
   enableuser(){
     this.isDisablednic = true
+    this.isDisabledaddress=false
  }
  enableadmin(){
     this.isDisablednic = false 
+    this.isDisabledaddress=true
   }
 
 }

@@ -17,7 +17,7 @@ import { AdminProfileComponent } from './components/share/admin-profile/admin-pr
     LoginComponent,
     SignUpComponent,
     ProfileComponent,
-    AdminProfileComponent
+    AdminProfileComponent, 
   ],
   imports: [ 
     AppRoutingModule,
